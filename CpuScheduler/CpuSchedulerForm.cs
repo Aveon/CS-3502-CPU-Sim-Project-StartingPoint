@@ -696,23 +696,9 @@ Instructions:
             summaryItem.SubItems.Add($"Throughput: {throughput:F3}");
             listView1.Items.Add(summaryItem);
 
-            // TODO: STUDENTS - Add performance metrics calculation and display here
-            // Required metrics for your project report:
-            // 1. Average Waiting Time (AWT) - sum of all waiting times / number of processes
-            // 2. Average Turnaround Time (ATT) - sum of all turnaround times / number of processes  
-            // 3. CPU Utilization (%) - (total burst time / total time) * 100
-            // 4. Throughput (processes/second) - number of processes / total time
-            // 5. Response Time (RT) [Optional] - time from arrival to first execution
-            // Display these metrics in the results view for comparison between algorithms
-
-            // TODO: STUDENTS - Add CSV export functionality for results data
-            // Create a "Export Results" button in the results panel to save:
-            // - Individual process results (what's shown in listView1)
-            // - Performance metrics summary for each algorithm tested
-            // Reference the SaveData_Click() method above to learn CSV file handling
-            // This will help you create tables/charts for your project report
         }
 
+        // CSV Exporter Method
         private void ExportResults_CSV()
         {
             if (listView1.Items.Count == 0)
